@@ -24,13 +24,13 @@ namespace netcoremvc
                 hostUrl = "http://0.0.0.0:5000";
 
             var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseUrls(hostUrl)   // <!-- this 
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .UseConfiguration(configuration)
-        .Build();
+            .UseKestrel()
+            .UseUrls(hostUrl)   // <!-- this 
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntegration()
+            .UseStartup<Startup>()
+            .UseConfiguration(configuration)
+            .Build();
 
             host.Run();
         }
